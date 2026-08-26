@@ -580,7 +580,10 @@ class VmxConverter:
         lines.append(f"ostype: {self.ostype}")
         lines.append(f"scsihw: {self.scsihw}")
         lines.append(f"sockets: {self.sockets}")
-        lines.append("numa: 0")
+        cpu_hotplug = self.vmx.get("vcpu.hotadd", "").lower() == "true"
+        mem_hotplug = self.vmx.get("mem.hotadd", "").lower() == "true"
+        numa = 1 if self.sockets > 1 or cpu_hotplug or mem_hotplug else 0
+        lines.append(f"numa: {numa}")
         lines.append(f"onboot: {1 if self.onboot else 0}")
         lines.append(f"localtime: {1 if self.is_windows else 0}")
         if self.is_linux:
