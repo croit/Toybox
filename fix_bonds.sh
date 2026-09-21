@@ -7,8 +7,6 @@
 # Handy when you've got a cluster of Proxmox boxes that need sorting
 # and you don't want to be clicking through the web UI on each one.
 #
-# AI assisted — human built and refined with Claude (Anthropic).
-#
 # Usage:
 #   bash fix_bonds.sh [bond_name] [mtu] [config_file]
 #
@@ -25,6 +23,16 @@
 # Run as root. Does an in-place edit of the config file so take a
 # backup first if you've got owt important on there.
 #
+#
+# SPDX-License-Identifier: GPL-2.0-only
+# Copyright (C) 2026 Damien Dye / croit GmbH
+#
+# Written by Damien Dye / croit GmbH, with Claude AI assistance.
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License version 2 as published
+# by the Free Software Foundation. It comes with ABSOLUTELY NO WARRANTY.
+# See the LICENSE file in this repository for the full text.
 
 BOND_NAME="${1:-bond1}"
 MTU_VALUE="${2:-9000}"

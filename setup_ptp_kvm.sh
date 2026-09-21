@@ -11,6 +11,16 @@
 #   5. Restart chrony and verify
 #
 # Run as root.  Supports Debian/Ubuntu and RHEL/Rocky/Alma/Fedora/SUSE.
+#
+# SPDX-License-Identifier: GPL-2.0-only
+# Copyright (C) 2026 Damien Dye / croit GmbH
+#
+# Written by Damien Dye / croit GmbH, with Claude AI assistance.
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License version 2 as published
+# by the Free Software Foundation. It comes with ABSOLUTELY NO WARRANTY.
+# See the LICENSE file in this repository for the full text.
 
 set -euo pipefail
 

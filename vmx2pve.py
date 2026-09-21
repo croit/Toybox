@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-only
+# Copyright (C) 2026 Damien Dye / croit GmbH
 """
 vmx2pve.py — Convert VMware .vmx VM configuration to Proxmox VE .conf format.
 
@@ -80,8 +82,13 @@ Exit codes
   1  Unsupported guest OS or file not found
   2  Invalid CLI arguments
 
-Author:  Damien Dye / croit GmbH
-Licence: MIT
+Written by Damien Dye / croit GmbH, with Claude AI assistance.
+
+Licence: GPL-2.0-only — see the LICENSE file in this repository.
+         This program is free software; you can redistribute it and/or
+         modify it under the terms of the GNU General Public License
+         version 2 as published by the Free Software Foundation.
+         It comes with ABSOLUTELY NO WARRANTY.
 """
 
 import argparse
